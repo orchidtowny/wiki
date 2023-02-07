@@ -1,6 +1,222 @@
 <head>
+    <title>Orchid Wiki</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">   
+    <meta name="viewport" content="width=device-width" />
+    
+    <meta property="og:title" content="Welcome to Orchid Towny!" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://orchidmc.me/" />
+	<meta property="og:image" content="https://orchidmc.me/assets/circle.png" />
+	<meta property="og:description" content="Orchid Towny is a Minecraft Server where you can build your empire, grind in Slimefun, chat with the community, or build to your hearts content." />
+	<meta name="theme-color" content="#DA70D6">
 
+    <link rel="preconnect" href="https://assets.orchidmc.me"><link rel="preconnect" href="https://assets.orchidmc.me" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        @media (prefers-color-scheme: light) {
+            body { margin: 0px; margin-bottom: 80px; }
+        
+        html, body { max-width: 100%; overflow-x: hidden; }
+        
+        .header-image { mask-image: url("https://assets.orchidmc.me/masks/headerwaves.png")!important; -webkit-mask-image: url("https://assets.orchidmc.me/masks/wavyheadermask.svg")!important; background-image: url("https://assets.orchidmc.me/images/orchidmcme/header.png"); -webkit-mask-size: cover; -webkit-mask-position: left bottom; width: 100%; height: 480px; background-size: cover; -webkit-mask-repeat: no-repeat; }
+        
+        .secondary-header { font-family: "Source Serif Pro", "Times", "Times New Roman", serif; font-style: italic; font-weight: 400; text-transform: lowercase; margin: 0px; padding: 0px; color: #fff; font-size: 20px; }
+        .brand-header { font-family: "Commissioner", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; font-style: normal; font-weight: 800; margin: 0px; padding: 0px; color: #fff; font-size: 50px; }
+        .body-header { font-family: "Source Sans Pro", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; font-style: normal; font-weight: 400; margin: 0px; padding: 0px; color: #fff; font-size: 18px; }
+        .header-wrapper { padding: 70px; width: 45%; }
+        
+        .btn-brand { background-color: #da70d6; }
+        .btn { border-radius: 10px; padding: 10px; padding-left: 18px; padding-right: 18px; font-family: "Commissioner", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; color: #fff; cursor: pointer; text-decoration: none!important; -webkit-user-select: none;  -ms-user-select: none;  user-select: none;  }
+        .btn:last-child { margin-left: 10px; line-height: 40px; transition: 0.1s; }
+        .btn:hover { opacity: 75%; transition: 0.1s; }
+        
+        @media only screen and (max-width: 750px) {
+            .header-wrapper { padding: 70px; width: 70%; }
+            #ip-btn { display: none; }
+		}
+        
+        hr { width: 45px!important; height: 0px; margin-top: -5px; border-radius: 10px; background-color: #c4c4c4; border: solid #c4c4c4; margin-bottom: 30px; }
+        
+        .body-container { padding-top: 20px }
+        .body-ctn-header { font-family: "Commissioner", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; font-weight: 800; font-size: 30px; }
+        
+        .ctn-i { text-align: left; border-radius: 10px; width: 350px; margin: 20px; }
+        .ctn-i-header { font-family: "Source Serif Pro", "Times", "Times New Roman", serif; font-style: italic; font-weight: 400; text-transform: lowercase; margin: 0px; padding: 0px; font-size: 16px; }
+        .ctn-i-title { font-family: "Commissioner", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; font-style: normal; font-weight: 650; margin: 0px; padding: 0px; font-size: 24px; padding-bottom: 15px;}
+        .ctn-i-body { font-family: "Source Sans Pro", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; font-style: normal; font-weight: 400; margin: 0px; padding: 0px; font-size: 18px; }
+        
+        .ctn-i-upper { display: block!important; }
+        
+        .ctn-i-headtitle { display: inline-block!important; }
+        .sf.ctn-i-img { background-image: url(https://assets.orchidmc.me/images/orchidmcme/sf.png); }
+        .nptw.ctn-i-img { background-image: url(https://assets.orchidmc.me/images/orchidmcme/nptw.png); }
+        .ca.ctn-i-img { background-image: url(https://assets.orchidmc.me/images/orchidmcme/ca.png); }
+        .ty.ctn-i-img { background-image: url(https://assets.orchidmc.me/images/orchidmcme/ty.png); }
+        .ctn-i-img { height: 36px; width: 36px; margin-right: 15px; background-size: cover; display: inline-block!important; border-radius: 7px; border: solid; border-color: #c4c4c4; border-width: 2px; }
+        
+        .ctn { align-items: flex-start; display: flex; justify-content: space-evenly; flex-wrap: wrap; max-width: 1000px; }
+        
+        .sticky { position: fixed; bottom: 0; width: 100% }
+        .footer { width: 100%; }
+        .footer-wrapper { background-color: #ebebeb80; padding: 15px; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+        .footer-link { font-family: "Commissioner", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; font-style: normal; font-weight: 700; margin: 0px; padding: 0px; font-size: 18px; padding-left: 10px; padding-right: 10px; color: #000; text-decoration: none!important; }
+		.footer-link:hover { text-decoration: underline!important; }
+        
+        .ctn-i-title-btn { cursor: pointer; }
+        
+		.credits { font-family: "Source Sans Pro", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; font-style: normal; font-weight: 400; margin: 0px; padding: 0px; color: #000; font-size: 18px; }
+        }
+        
+        /* 
+        
+        DARK THEME!!!!!!
+        
+        */
+        
+        @media (prefers-color-scheme: dark) {
+            body { margin: 0px; margin-bottom: 80px; }
+        
+        html, body { max-width: 100%; overflow-x: hidden; background-color: #1d1c21; color: #fff; }
+        
+        .header-image { mask-image: url("https://assets.orchidmc.me/masks/headerwaves.png")!important; -webkit-mask-image: url("https://assets.orchidmc.me/masks/wavyheadermask.svg")!important; background-image: url("https://assets.orchidmc.me/images/orchidmcme/header.png"); -webkit-mask-size: cover; -webkit-mask-position: left bottom; width: 100%; height: 480px; background-size: cover; -webkit-mask-repeat: no-repeat; }
+        
+        .secondary-header { font-family: "Source Serif Pro", "Times", "Times New Roman", serif; font-style: italic; font-weight: 400; text-transform: lowercase; margin: 0px; padding: 0px; color: #fff; font-size: 20px; }
+        .brand-header { font-family: "Commissioner", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; font-style: normal; font-weight: 800; margin: 0px; padding: 0px; color: #fff; font-size: 50px; }
+        .body-header { font-family: "Source Sans Pro", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; font-style: normal; font-weight: 400; margin: 0px; padding: 0px; color: #fff; font-size: 18px; }
+        .header-wrapper { padding: 70px; width: 45%; }
+        
+        .btn-brand { background-color: #da70d6; }
+        .btn { border-radius: 10px; padding: 10px; padding-left: 18px; padding-right: 18px; font-family: "Commissioner", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; color: #fff; cursor: pointer; text-decoration: none!important; -webkit-user-select: none;  -ms-user-select: none;  user-select: none;  }
+        .btn:last-child { margin-left: 10px; line-height: 40px; transition: 0.1s; }
+        .btn:hover { opacity: 75%; transition: 0.1s; }
+        
+        @media only screen and (max-width: 750px) {
+            .header-wrapper { padding: 70px; width: 70%; }
+            #ip-btn { display: none; }
+		}
+        
+        hr { width: 45px!important; height: 0px; margin-top: -5px; border-radius: 10px; background-color: #c4c4c4; border: solid #c4c4c4; margin-bottom: 30px; }
+        
+        .body-container { padding-top: 20px }
+        .body-ctn-header { font-family: "Commissioner", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; font-weight: 800; font-size: 30px; }
+        
+        .ctn-i { text-align: left; border-radius: 10px; width: 350px; margin: 20px; }
+        .ctn-i-header { font-family: "Source Serif Pro", "Times", "Times New Roman", serif; font-style: italic; font-weight: 400; text-transform: lowercase; margin: 0px; padding: 0px; font-size: 16px; }
+        .ctn-i-title { font-family: "Commissioner", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; font-style: normal; font-weight: 650; margin: 0px; padding: 0px; font-size: 24px; padding-bottom: 15px;}
+        .ctn-i-body { font-family: "Source Sans Pro", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; font-style: normal; font-weight: 400; margin: 0px; padding: 0px; font-size: 18px; }
+        
+        .ctn-i-upper { display: block!important; }
+        
+        .ctn-i-headtitle { display: inline-block!important; }
+        .sf.ctn-i-img { background-image: url(https://assets.orchidmc.me/images/orchidmcme/sf.png); }
+        .nptw.ctn-i-img { background-image: url(https://assets.orchidmc.me/images/orchidmcme/nptw.png); }
+        .ca.ctn-i-img { background-image: url(https://assets.orchidmc.me/images/orchidmcme/ca.png); }
+        .ty.ctn-i-img { background-image: url(https://assets.orchidmc.me/images/orchidmcme/ty.png); }
+        .ctn-i-img { height: 36px; width: 36px; margin-right: 15px; background-size: cover; display: inline-block!important; border-radius: 7px; border: solid; border-color: #26252b; border-width: 2px; }
+        
+        .ctn { align-items: flex-start; display: flex; justify-content: space-evenly; flex-wrap: wrap; max-width: 1000px; }
+        
+        .sticky { position: fixed; bottom: 0; width: 100% }
+        .footer { width: 100%; }
+        .footer-wrapper { background-color: #26252b80; padding: 15px; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+        .footer-link { font-family: "Commissioner", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; font-style: normal; font-weight: 700; margin: 0px; padding: 0px; font-size: 18px; padding-left: 10px; padding-right: 10px; color: #fff; text-decoration: none!important; }
+		.footer-link:hover { text-decoration: underline!important; }
+        
+        .ctn-i-title-btn { cursor: pointer; }
+        
+		.credits { font-family: "Source Sans Pro", Helvetica, Helvetica Neue, Arial, Ubuntu, Segoe UI, Ubuntu, sans-serif; font-style: normal; font-weight: 400; margin: 0px; padding: 0px; color: #fff; font-size: 18px; }
+        
+    
+    }
+
+    .brand-header-ctn {
+        background-color: #da70d6;
+        width: 100%;
+    }
+
+    .bh {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        font-size: 40px;
+    }
+    </style>
 </head>
 <body>
-  <h1>Orchid Wiki</h1>
+    <div class="header-container header-image">
+        <div class="header-wrapper">
+        <h3 class="secondary-header">Welcome to the</h3>
+        <h1 class="brand-header" style="padding-bottom: 20px;">Orchid Wiki</h1>
+        <p class="body-header">All the essential information you'd need to play on Orchid, at your fingertips. Want to contribute? Check out our GitHub where there are contribution instructions.</p>
+        <div class="button-container-header" style="padding-top: 30px;">
+        <a class="btn-brand btn" href="https://github.com/orchidtowny/wiki">See us on GitHub</a>
+        </div>
+        </div>
+        </div>
+
+        <div class="footer sticky" id="footer">
+            <div class="footer-wrapper">
+            <center>
+            <a class="footer-link" href="https://orchidmc.me">Website</a>
+            <a class="footer-link" href="https://store.orchidmc.me">Store</a>
+            <a class="footer-link" href="https://map.orchidmc.me">World Map</a>
+            </center>
+            </div>
+            </div>
+
+  <div class="body-container">
+    <center>
+    <h2 id="features" class="body-ctn-header">Categories</h2>
+    <hr>
+    <div class="ctn">
+
+    <div class="ctn-i">
+    <div class="ctn-i-upper">
+    <div class="sf ctn-i-img"></div>
+    <div class="ctn-i-headtitle">
+    <span class="ctn-i-header">essentials</span>
+    <p class="ctn-i-title">Towny</p>
+    </div>
+    </div>
+    <a class="btn-brand btn" style="margin-left: 0px;" href="https://wiki.orchidmc.me/towny">Check it out</a>
+    </div>
+
+    <div class="ctn-i">
+        <div class="ctn-i-upper">
+        <div class="sf ctn-i-img"></div>
+        <div class="ctn-i-headtitle">
+        <span class="ctn-i-header">essentials</span>
+        <p class="ctn-i-title">Rules</p>
+        </div>
+        </div>
+        <a class="btn-brand btn" style="margin-left: 0px;" href="https://wiki.orchidmc.me/towny">Check it out</a>
+        </div>
+
+    <div class="ctn-i">
+        <div class="ctn-i-upper">
+        <div class="sf ctn-i-img"></div>
+        <div class="ctn-i-headtitle">
+        <span class="ctn-i-header">advanced</span>
+        <p class="ctn-i-title">Slimefun</p>
+        </div>
+        </div>
+        <a class="btn-brand btn" style="margin-left: 0px;" href="https://wiki.orchidmc.me/slimefun">Check it out</a>
+        </div>
+
+        <div class="ctn-i">
+            <div class="ctn-i-upper">
+            <div class="sf ctn-i-img"></div>
+            <div class="ctn-i-headtitle">
+            <span class="ctn-i-header">advanced</span>
+            <p class="ctn-i-title">Advanced Enchants</p>
+            </div>
+            </div>
+            <a class="btn-brand btn" style="margin-left: 0px;" href="https://wiki.orchidmc.me/advancedenchantments">Check it out</a>
+            </div>
+
+    </div>
+    </center>
+    </div>
 </body>
