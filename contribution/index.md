@@ -1,3 +1,9 @@
+---
+layout: default
+title: Contribution
+nav_order: 2
+---
+
 # Contributing Guidelines
 
 To contribute, there's a lot of tips and tricks with GitHub that are essential for writing and contributing, along with specific guidelines and rules for the formatting of the Markdown files and the entire wiki.  
