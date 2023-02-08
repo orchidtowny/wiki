@@ -1,6 +1,6 @@
 title: Orchid Wiki
-description: 
-theme: just-the-docs
+description: Orchid Wiki
+remote_theme: pmarsceill/just-the-docs
 
 favicon_ico: "/favicon.ico"
 
