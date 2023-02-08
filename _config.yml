@@ -2,8 +2,7 @@ title: Orchid Wiki
 description: 
 theme: just-the-docs
 
-logo: "circle.png"
-favicon_ico: "favicon.ico"
+favicon_ico: "/favicon.ico"
 
 url: https://wiki.orchidmc.me
 
