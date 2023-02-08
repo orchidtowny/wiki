@@ -2,7 +2,10 @@ title: Orchid Wiki
 description: 
 theme: just-the-docs
 
+logo: "circle.png"
+favicon_ico: "favicon.ico"
+
 url: https://wiki.orchidmc.me
 
 aux_links:
-  Template Repository: https://github.com/orchidtowny/wiki
+  Contribute: https://github.com/orchidtowny/wiki
