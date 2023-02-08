@@ -1,6 +1,6 @@
 ---
 layout: default
-title: h
-nav_order: 2
+title: Home
+nav_order: 1
 ---
-h
+NOBODY WILL SEE THIS >:D
