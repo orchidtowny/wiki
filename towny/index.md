@@ -39,7 +39,7 @@ As a resident, you can trust players to your plot in a town with `/plot trust [n
 
 ## Nations and War
    
-Does that title freak you out? Don't worry, I'll get more in depth on that later.  
+Does that title freak you out? Don't worry, I'll get more in depth on that later in this section.  
     
 If you own a town, you probably have or will want to create a nation. Nations are vital parts of the server considering it's Earth format. To create a nation, you can run `/n new [name]` and to join a nation you either need an invite from the ruler or their next in line (`/n invite [town]`) or if they are public `/n join [name]`.  
   
