@@ -6,7 +6,7 @@ nav_order: 2
 
 # Contributing Guidelines
 
-To contribute, there's a lot of tips and tricks with GitHub that are essential for writing and contributing, along with specific guidelines and rules for the formatting of the Markdown files and the entire wiki.  
+Contributing with GitHub can be confusing, but don't worry- everything you'll need is right here.  
   
 If you don't want to write any articles, but find issues (or want something to be clearer), feel free to make an issue and cite the specific page and line, any contributions (issues included) are always helpful!  
 
