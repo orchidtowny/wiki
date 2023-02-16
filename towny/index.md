@@ -6,9 +6,9 @@ nav_order: 3
 
 # Towny
   
-Getting started with Towny can seem like a really difficult and overwhelming task, but don't worry. This guide should cover anything you'd need to grasp the basics.  
+Getting started with Towny can seem like a really difficult and overwhelming task, but don't worry. This guide should cover anything you'll need and cover all the basics.  
   
-**Table of Contents** (link these later!)
+**Table of Contents**
 1. Settling in
 2. Growing your town
 3. Configuring your town
@@ -23,24 +23,28 @@ You now have your basic homeblock and town spawn. You can always get to your tow
 
 ## Growing your town
 
-So, you now have your town. Now you can invite some of your friends or players who'd like to settle in your town. First, you may want to create some plots. With the town blocks you get by default you can claim a large amount of area, but you can buy more with `/t buy bonus [number]`. You can claim chunks for your town with `/t claim`, a good tool to see chunk borders is `FS + G` which will show you chunk borders. So, now you've claimed some extra blocks. Let's put them up for sale! Inside the chunk you'd like to sell (it cannot be the homeblock) run `/t fs [price]` and they will be able to buy it at that price. They can buy a plot with `/plot claim`
+So, you now have your town. Now you can invite some of your friends or players who'd like to settle in your town. First, you may want to create some plots. With the town blocks you get by default you can claim a large amount of area, but you can buy more with `/t buy bonus [number]`. You can claim chunks for your town with `/t claim`, a good tool to see chunk borders is `FS + G` which will show you chunk borders. So, now you've claimed some extra blocks. Let's put them up for sale! Inside the chunk you'd like to sell (it cannot be the homeblock) run `/t fs [price]` and they will be able to buy it at that price. They can buy a plot with `/plot claim`  
   
-Now you can invite other players now that they have a place to live, run `/t invite [player]` to invite someone. From there, your town can grow as people want to join you. 
+Now you can invite other players now that they have a place to live, run `/t invite [player]` to invite someone. From there, your town can grow as people want to join you.   
 
 ## Configuring your town
   
-There's a lot of `/t toggle` settings for your town, which can dictate if mobs spawn, if people can fight, if people can break things, and more. Town toggle settings are also available for specific plots with `/plot toggle`
+There's a lot of `/t toggle` settings for your town, which can dictate if mobs spawn, if people can fight, if people can break things, and more. Town toggle settings are also available for specific plots with `/plot toggle`.  
 
 ## Advanced Plots
   
-Section more in depth about specific permissions, plot types, plot groups, and other Towny features.
+Each plot has a lot of configuration options. For example, a good way to keep plots in order is by creating plot groups. To create a plot group, use `/plot group create [name]` and when you are in the plot, you can run `/plot group add [name]`. With a plot group, you can do all normal single-plot actions as one whole group.  
+  
+As a resident, you can trust players to your plot in a town with `/plot trust [name]`, or if you bought a plot group, `/plot group trust [name]`.  
 
 ## Nations and War
    
-! Does that title freak you out? Don't worry, I'll get more in depth on that later.  
+Does that title freak you out? Don't worry, I'll get more in depth on that later.  
     
 If you own a town, you probably have or will want to create a nation. Nations are vital parts of the server considering it's Earth format. To create a nation, you can run `/n new [name]` and to join a nation you either need an invite from the ruler or their next in line (`/n invite [town]`) or if they are public `/n join [name]`.  
   
 Similar to a town, nations have taxes based off of the number of towns inside of them. Each town adds £500 to your taxes which are collected daily. Nations can set their own taxes on towns which will charge the town bank at the same time as the daily nation taxes.  
   
-Now, let's get to the war portion of this. Get more info on who goes to war with who. However, they cannot go to war with you if they pay for a peaceful status, or pay for a neutral status that only allows you to go to war with them if you are enemies.   
+Now, let's get to the war portion of this. Nations can go to war with other nations by attacking a town in another nation. However, they cannot go to war with you if they pay for a peaceful status, or pay for a neutral status that only allows you to go to war with them if you are enemies.   
+  
+Remember, all rules are still effective during a war. You cannot grief or steal from eachother unless you both agree on it.  
